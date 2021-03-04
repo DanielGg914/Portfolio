@@ -1,0 +1,265 @@
+$primary-color: rgba(0, 109, 233, 0.788);
+$secondary-color: rgb(0, 233, 214);
+
+
+body{
+    font-family: sans-serif;
+    background-color: #040404;
+    color: #fff;
+    position: relative;
+    background: transparent;
+
+    &::before{
+        content: "";
+        position: fixed;
+        background: #040404 top right no-repeat; //Can place an image if you want
+        background-size: cover;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        z-index: -1;
+
+    }
+}
+
+a{
+    color: $primary-color;
+    text-decoration: none;
+    transition: 1s;
+    &:hover{
+        color: $secondary-color;
+        text-decoration: none;
+    }
+}
+
+//Navbar
+
+#navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+
+//The Landing Page
+
+#landing{
+    width: 100%;
+    height: 100vh;
+    background: url(https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)top right;
+    background-size: cover;
+    position: relative;
+    
+
+    &::before{
+        content: "";
+        background: rgba(0, 0, 0, 0.65);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .landing-container{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 15px;
+        
+    }
+    
+    h1{
+        margin: 0 0 10px 0;
+        font-size: 64px;
+        font-family: fantasy;
+        color: #FFF;
+    }
+    
+    h2{
+        color: #EEE;
+        margin-bottom: 50px;
+        font-weight: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .btn-scroll{
+        transition: all 1s;
+        color: $primary-color;
+
+        i{
+            font-size: 48px;
+        }
+
+        :hover{
+            color: $secondary-color;
+        }
+    }
+}
+
+//skills
+
+.skills{
+    .progress{
+        height: 60px;
+        display: block;
+        background: none;
+        border-radius: 0;
+
+
+        .skill{
+            font-weight: 500;
+            padding: 10px 0;
+            margin: 0;
+            display: block;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            color: #FFF;
+
+            .val{
+                float: right;
+                font-style: normal;
+
+            }
+        }
+    }
+
+    .progress-bar-wrap{
+        background: seashell;
+    }
+
+    .progress-bar-html{
+        height: 10px;
+        background: linear-gradient(to right, palegreen, $primary-color);
+        animation-name: htmlProgress;
+        animation-duration: 3s;
+    }
+    .progress-bar-css{
+        height: 10px;
+        background: linear-gradient(to right, palegreen, $primary-color);
+        animation-name: cssProgress;
+        animation-duration: 3s;
+    }
+    .progress-bar-JS{
+        height: 10px;
+        background: linear-gradient(to right, palegreen, $primary-color);
+        animation-name: jsProgress;
+        animation-duration: 3s;
+    }
+    .progress-bar-SASS{
+        height: 10px;
+        background: linear-gradient(to right, palegreen, $primary-color);
+        animation-name: sassProgress;
+        animation-duration: 3s;
+    }
+    .progress-bar-jQuery{
+        height: 10px;
+        background: linear-gradient(to right, palegreen, $primary-color);
+        animation-name: jqueryProgress;
+        animation-duration: 3s;
+    }
+    .progress-bar-BS{
+        height: 10px;
+        background: linear-gradient(to right, palegreen, $primary-color);
+        animation-name: bsProgress;
+        animation-duration: 3s;
+    }
+
+    @keyframes htmlProgress {
+        from {width: 0%; box-shadow: 10px 0px 10px 10px #0ff;}
+        to {width: 80%;}
+    }
+    @keyframes cssProgress {
+        from {width: 0%; box-shadow: 10px 0px 10px 10px #0ff;}
+        to {width: 70%;}
+    }
+    @keyframes jsProgress {
+        from {width: 0%; box-shadow: 10px 0px 10px 10px #0ff;}
+        to {width: 60%;}
+    }
+    @keyframes sassProgress {
+        from {width: 0%; box-shadow: 10px 0px 10px 10px #0ff;}
+        to {width: 70%;}
+    }
+    @keyframes jqueryProgress {
+        from {width: 0%; box-shadow: 10px 0px 10px 10px #0ff;}
+        to {width: 50%;}
+    }
+    @keyframes bsProgress {
+        from {width: 0%; box-shadow: 10px 0px 10px 10px #0ff;}
+        to {width: 25%;}
+    }
+}
+
+//Resume
+
+.resume{
+    .resume-title{
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #FFF;
+
+    }
+
+    .resume-item{
+        padding: 0 0 20px 20px;
+        margin-top: -2px;
+        border-left: 2px solid $secondary-color;
+        position: relative;
+
+        h4{
+            line-height: 18px;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $secondary-color;
+            margin-bottom: 10px;
+        }
+
+        h5{
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            display: inline-block;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        ul{
+            padding-left: 20px;
+
+            li{
+                padding-bottom: 0;
+            }
+        }
+        &:last-child{
+            padding-bottom: 0;
+        }
+
+        &::before{
+            position: absolute;
+            content: "";
+            width: 16px;
+            height: 16px;
+            border-radius: .5;
+            left: -2px;
+            top: 0px;
+            background: 0;
+            border: 2px solid $secondary-color;
+        }
+    }
+}
+
+
