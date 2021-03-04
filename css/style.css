@@ -381,4 +381,65 @@ a:hover {
   background: 0;
   border: 2px solid #00e9d6;
 }
+
+.contact .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #FFF;
+}
+
+.contact .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #00e9d6;
+  position: relative;
+}
+
+.contact .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #00e9d6;
+  margin-bottom: 10px;
+}
+
+.contact .resume-item h5 {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact .resume-item ul {
+  padding-left: 20px;
+}
+
+.contact .resume-item ul li {
+  padding-bottom: 0;
+}
+
+.contact .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.contact .resume-item::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: .5;
+  left: -2px;
+  top: 0px;
+  background: 0;
+  border: 2px solid #00e9d6;
+}
+
+.row {
+  color: black;
+}
 /*# sourceMappingURL=style.css.map */
