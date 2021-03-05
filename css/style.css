@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background-color: #040404;
+  background-color: #212529;
   color: #fff;
   position: relative;
   background: transparent;
@@ -9,7 +9,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 top right no-repeat;
+  background: #212529 top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -35,6 +35,8 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 3;
+  -webkit-box-shadow: 1px 4px 5px black;
+          box-shadow: 1px 4px 5px black;
 }
 
 #landing {
@@ -338,6 +340,29 @@ a:hover {
   margin-top: -2px;
   border-left: 2px solid #00e9d6;
   position: relative;
+  -webkit-animation-name: resume-item;
+          animation-name: resume-item;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  list-style-type: none;
+}
+
+@-webkit-keyframes resume-item {
+  from {
+    border-left: 0px solid black;
+  }
+  to {
+    border-left: 2px solid #00e9d6;
+  }
+}
+
+@keyframes resume-item {
+  from {
+    border-left: 0px solid black;
+  }
+  to {
+    border-left: 2px solid #00e9d6;
+  }
 }
 
 .resume .resume-item h4 {
@@ -380,6 +405,10 @@ a:hover {
   top: 0px;
   background: 0;
   border: 2px solid #00e9d6;
+}
+
+.contact {
+  padding-bottom: 5rem;
 }
 
 .contact .resume-title {
@@ -439,7 +468,7 @@ a:hover {
   border: 2px solid #00e9d6;
 }
 
-.row {
+#portfolio .row {
   color: black;
 }
 /*# sourceMappingURL=style.css.map */

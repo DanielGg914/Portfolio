@@ -4,7 +4,7 @@ $secondary-color: rgb(0, 233, 214);
 
 body{
     font-family: sans-serif;
-    background-color: #040404;
+    background-color: #212529;
     color: #fff;
     position: relative;
     background: transparent;
@@ -12,7 +12,7 @@ body{
     &::before{
         content: "";
         position: fixed;
-        background: #040404 top right no-repeat; //Can place an image if you want
+        background: #212529 top right no-repeat; //Can place an image if you want
         background-size: cover;
         left: 0;
         right: 0;
@@ -40,6 +40,7 @@ a{
     position: sticky;
     top: 0;
     z-index: 3;
+    box-shadow: 1px 4px 5px rgb(0, 0, 0);
 }
 
 
@@ -210,7 +211,7 @@ a{
         margin-top: 20px;
         margin-bottom: 20px;
         color: #FFF;
-
+        
     }
 
     .resume-item{
@@ -218,6 +219,14 @@ a{
         margin-top: -2px;
         border-left: 2px solid $secondary-color;
         position: relative;
+        animation-name: resume-item;
+        animation-duration: 2s;
+        list-style-type: none;
+
+        @keyframes resume-item{
+            from{border-left: 0px solid black;}
+            to{border-left: 2px solid $secondary-color;}
+        }
 
         h4{
             line-height: 18px;
@@ -263,6 +272,7 @@ a{
 }
 
 .contact{
+    padding-bottom: 5rem;
     .resume-title{
         font-size: 26px;
         font-weight: 700;
@@ -321,6 +331,9 @@ a{
     }
 }
 
-.row{
-    color: black;
+#portfolio{
+    .row{
+        color: rgb(0, 0, 0);
+    }
+    
 }
