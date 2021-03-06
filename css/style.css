@@ -40,9 +40,10 @@ a:hover {
 }
 
 #landing {
+  padding-bottom: 3rem;
   width: 100%;
   height: 100vh;
-  background: url(https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) top right;
+  background: url(https://thumbs.gfycat.com/UnpleasantAnnualCockroach-max-14mb.gif) top right;
   background-size: cover;
   position: relative;
 }
@@ -109,6 +110,10 @@ a:hover {
   color: #00e9d6;
 }
 
+.skills {
+  padding-bottom: 3rem;
+}
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -141,8 +146,8 @@ a:hover {
   background: linear-gradient(to right, palegreen, rgba(0, 109, 233, 0.788));
   -webkit-animation-name: htmlProgress;
           animation-name: htmlProgress;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .skills .progress-bar-css {
@@ -151,8 +156,8 @@ a:hover {
   background: linear-gradient(to right, palegreen, rgba(0, 109, 233, 0.788));
   -webkit-animation-name: cssProgress;
           animation-name: cssProgress;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .skills .progress-bar-JS {
@@ -161,8 +166,8 @@ a:hover {
   background: linear-gradient(to right, palegreen, rgba(0, 109, 233, 0.788));
   -webkit-animation-name: jsProgress;
           animation-name: jsProgress;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .skills .progress-bar-SASS {
@@ -171,8 +176,8 @@ a:hover {
   background: linear-gradient(to right, palegreen, rgba(0, 109, 233, 0.788));
   -webkit-animation-name: sassProgress;
           animation-name: sassProgress;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .skills .progress-bar-jQuery {
@@ -181,8 +186,8 @@ a:hover {
   background: linear-gradient(to right, palegreen, rgba(0, 109, 233, 0.788));
   -webkit-animation-name: jqueryProgress;
           animation-name: jqueryProgress;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .skills .progress-bar-BS {
@@ -191,8 +196,8 @@ a:hover {
   background: linear-gradient(to right, palegreen, rgba(0, 109, 233, 0.788));
   -webkit-animation-name: bsProgress;
           animation-name: bsProgress;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 @-webkit-keyframes htmlProgress {
@@ -327,6 +332,10 @@ a:hover {
   }
 }
 
+.resume {
+  padding-bottom: 3rem;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -408,7 +417,7 @@ a:hover {
 }
 
 .contact {
-  padding-bottom: 5rem;
+  padding-bottom: 9rem;
 }
 
 .contact .resume-title {
@@ -468,7 +477,16 @@ a:hover {
   border: 2px solid #00e9d6;
 }
 
+#portfolio {
+  padding-bottom: 3rem;
+}
+
 #portfolio .row {
   color: black;
+}
+
+#portfolio .card .view image {
+  width: 150px;
+  height: 150px;
 }
 /*# sourceMappingURL=style.css.map */

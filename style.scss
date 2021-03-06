@@ -43,14 +43,16 @@ a{
     box-shadow: 1px 4px 5px rgb(0, 0, 0);
 }
 
-
 //The Landing Page
 
 #landing{
+    padding-bottom: 3rem;
     width: 100%;
     height: 100vh;
-    background: url(https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)top right;
+    background: url(https://thumbs.gfycat.com/UnpleasantAnnualCockroach-max-14mb.gif)top right;
     background-size: cover;
+    //https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+    //https://thumbs.gfycat.com/UnpleasantAnnualCockroach-max-14mb.gif
     position: relative;
     
 
@@ -111,6 +113,7 @@ a{
 //skills
 
 .skills{
+    padding-bottom: 3rem;
     .progress{
         height: 60px;
         display: block;
@@ -143,37 +146,38 @@ a{
         height: 10px;
         background: linear-gradient(to right, palegreen, $primary-color);
         animation-name: htmlProgress;
-        animation-duration: 3s;
+        animation-duration: 5s;
     }
     .progress-bar-css{
         height: 10px;
         background: linear-gradient(to right, palegreen, $primary-color);
+        
         animation-name: cssProgress;
-        animation-duration: 3s;
+        animation-duration: 5s;
     }
     .progress-bar-JS{
         height: 10px;
         background: linear-gradient(to right, palegreen, $primary-color);
         animation-name: jsProgress;
-        animation-duration: 3s;
+        animation-duration: 5s;
     }
     .progress-bar-SASS{
         height: 10px;
         background: linear-gradient(to right, palegreen, $primary-color);
         animation-name: sassProgress;
-        animation-duration: 3s;
+        animation-duration: 5s;
     }
     .progress-bar-jQuery{
         height: 10px;
         background: linear-gradient(to right, palegreen, $primary-color);
         animation-name: jqueryProgress;
-        animation-duration: 3s;
+        animation-duration: 5s;
     }
     .progress-bar-BS{
         height: 10px;
         background: linear-gradient(to right, palegreen, $primary-color);
         animation-name: bsProgress;
-        animation-duration: 3s;
+        animation-duration: 5s;
     }
 
     @keyframes htmlProgress {
@@ -205,6 +209,7 @@ a{
 //Resume
 
 .resume{
+    padding-bottom: 3rem;
     .resume-title{
         font-size: 26px;
         font-weight: 700;
@@ -272,7 +277,7 @@ a{
 }
 
 .contact{
-    padding-bottom: 5rem;
+    padding-bottom: 9rem;
     .resume-title{
         font-size: 26px;
         font-weight: 700;
@@ -332,8 +337,18 @@ a{
 }
 
 #portfolio{
+    padding-bottom: 3rem;
     .row{
         color: rgb(0, 0, 0);
+    }
+
+    .card{
+        .view{
+            image{
+                width: 150px;
+                height: 150px;
+            }
+        }
     }
     
 }
