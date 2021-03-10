@@ -28,6 +28,8 @@ a {
 a:hover {
   color: #00e9d6;
   text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #navbar {
@@ -112,6 +114,10 @@ a:hover {
 
 .skills {
   padding-bottom: 3rem;
+}
+
+.skills .section-title {
+  border-bottom: 2px solid #00e9d6;
 }
 
 .skills .progress {
@@ -338,12 +344,17 @@ a:hover {
   padding-bottom: 3rem;
 }
 
+.resume .section-title {
+  border-bottom: 2px solid #00e9d6;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #FFF;
+  text-shadow: #212529 5px 5px 5px;
 }
 
 .resume .resume-item {
@@ -356,6 +367,7 @@ a:hover {
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   list-style-type: none;
+  text-shadow: #212529 5px 5px 5px;
 }
 
 @-webkit-keyframes resume-item {
@@ -424,6 +436,10 @@ a:hover {
   padding-bottom: 9rem;
 }
 
+.contact .section-title {
+  border-bottom: 2px solid #00e9d6;
+}
+
 .contact .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -483,6 +499,11 @@ a:hover {
 
 #portfolio {
   padding-bottom: 3rem;
+}
+
+#portfolio .section-title {
+  border-bottom: 2px solid #00e9d6;
+  margin-bottom: 2rem;
 }
 
 #portfolio .row {

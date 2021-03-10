@@ -1,6 +1,8 @@
 $primary-color: rgba(0, 109, 233, 0.788);
 $secondary-color: rgb(0, 233, 214);
 
+//Body ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 body{
     font-family: sans-serif;
     background-color: #212529;
@@ -22,6 +24,8 @@ body{
     }
 }
 
+//Link Buttons ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 a{
     color: $primary-color;
     text-decoration: none;
@@ -29,10 +33,11 @@ a{
     &:hover{
         color: $secondary-color;
         text-decoration: none;
+        transition: 1s;
     }
 }
 
-//Navbar
+//Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #navbar{
     position: -webkit-sticky;
@@ -42,7 +47,7 @@ a{
     box-shadow: 1px 4px 5px rgb(0, 0, 0);
 }
 
-//The Landing Page
+//The Landing Page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #landing{
     padding-bottom: 3rem;
@@ -109,10 +114,15 @@ a{
     }
 }
 
-//skills
+//skills ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .skills{
     padding-bottom: 3rem;
+
+    .section-title{
+        border-bottom: 2px solid $secondary-color ;
+    }
+
     .progress{
         height: 60px;
         display: block;
@@ -206,17 +216,22 @@ a{
     }
 }
 
-//Resume
+//Resume ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .resume{
     padding-bottom: 3rem;
+
+    .section-title{
+        border-bottom: 2px solid $secondary-color ;
+    }
+
     .resume-title{
         font-size: 26px;
         font-weight: 700;
         margin-top: 20px;
         margin-bottom: 20px;
         color: #FFF;
-        
+        text-shadow: #212529 5px 5px 5px;
     }
 
     .resume-item{
@@ -227,6 +242,7 @@ a{
         animation-name: resume-item;
         animation-duration: 2s;
         list-style-type: none;
+        text-shadow: #212529 5px 5px 5px; 
 
         @keyframes resume-item{
             from{border-left: 0px solid black;}
@@ -277,8 +293,15 @@ a{
     }
 }
 
+//Contact ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .contact{
     padding-bottom: 9rem;
+
+    .section-title{
+        border-bottom: 2px solid $secondary-color ;
+    }
+
     .resume-title{
         font-size: 26px;
         font-weight: 700;
@@ -337,8 +360,16 @@ a{
     }
 }
 
+//Portfolio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 #portfolio{
     padding-bottom: 3rem;
+
+    .section-title{
+        border-bottom: 2px solid $secondary-color ;
+        margin-bottom: 2rem;
+    }
+
     .row{
         color: #fff;
     }
