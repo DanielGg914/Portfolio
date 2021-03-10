@@ -1,7 +1,6 @@
 $primary-color: rgba(0, 109, 233, 0.788);
 $secondary-color: rgb(0, 233, 214);
 
-
 body{
     font-family: sans-serif;
     background-color: #212529;
@@ -140,6 +139,7 @@ a{
 
     .progress-bar-wrap{
         background: seashell;
+        box-shadow: 5px 4px 1px rgb(0, 0, 0);
     }
 
     .progress-bar-html{
@@ -249,6 +249,7 @@ a{
             display: inline-block;
             font-weight: 600;
             margin-bottom: 10px;
+            box-shadow: 5px 4px 1px rgb(0, 0, 0);
         }
 
         ul{
@@ -267,11 +268,11 @@ a{
             content: "";
             width: 16px;
             height: 16px;
-            border-radius: .5;
             left: -2px;
             top: 0px;
             background: 0;
             border: 2px solid $secondary-color;
+            border-radius: 10px;
         }
     }
 }
@@ -339,16 +340,21 @@ a{
 #portfolio{
     padding-bottom: 3rem;
     .row{
-        color: rgb(0, 0, 0);
+        color: #fff;
+    }
+
+    .btn{
+        box-shadow: 3.5px 4px 0px rgb(0, 0, 0);
     }
 
     .card{
+        background-color: #1d1f22;
+        box-shadow: 7px 8px 0px rgb(0, 0, 0);
         .view{
             image{
-                width: 150px;
-                height: 150px;
+                width: 215px;
+                height: 200px;
             }
         }
     }
-    
 }

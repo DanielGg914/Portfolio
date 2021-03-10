@@ -138,6 +138,8 @@ a:hover {
 
 .skills .progress-bar-wrap {
   background: seashell;
+  -webkit-box-shadow: 5px 4px 1px black;
+          box-shadow: 5px 4px 1px black;
 }
 
 .skills .progress-bar-html {
@@ -390,6 +392,8 @@ a:hover {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  -webkit-box-shadow: 5px 4px 1px black;
+          box-shadow: 5px 4px 1px black;
 }
 
 .resume .resume-item ul {
@@ -409,11 +413,11 @@ a:hover {
   content: "";
   width: 16px;
   height: 16px;
-  border-radius: .5;
   left: -2px;
   top: 0px;
   background: 0;
   border: 2px solid #00e9d6;
+  border-radius: 10px;
 }
 
 .contact {
@@ -482,11 +486,22 @@ a:hover {
 }
 
 #portfolio .row {
-  color: black;
+  color: #fff;
+}
+
+#portfolio .btn {
+  -webkit-box-shadow: 3.5px 4px 0px black;
+          box-shadow: 3.5px 4px 0px black;
+}
+
+#portfolio .card {
+  background-color: #1d1f22;
+  -webkit-box-shadow: 7px 8px 0px black;
+          box-shadow: 7px 8px 0px black;
 }
 
 #portfolio .card .view image {
-  width: 150px;
-  height: 150px;
+  width: 215px;
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
