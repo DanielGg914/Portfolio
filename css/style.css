@@ -525,4 +525,8 @@ a:hover {
   width: 215px;
   height: 200px;
 }
+
+.accordion-flush .accordion-item .accordion-button {
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
