@@ -529,4 +529,11 @@ a:hover {
 .accordion-flush .accordion-item .accordion-button {
   color: #fff;
 }
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  padding: 1%;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=style.css.map */
