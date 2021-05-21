@@ -422,14 +422,13 @@ a:hover {
 
 .resume .resume-item::before {
   position: absolute;
-  content: "";
   width: 16px;
   height: 16px;
   left: -2px;
   top: 0px;
   background: 0;
   border: 2px solid #00e9d6;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .contact {
@@ -490,7 +489,7 @@ a:hover {
   content: "";
   width: 16px;
   height: 16px;
-  border-radius: .5;
+  border-radius: 15px;
   left: -2px;
   top: 0px;
   background: 0;
@@ -533,6 +532,13 @@ a:hover {
 .fa-linkedin {
   background: #007bb5;
   color: white;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.fa-github {
+  background: #212529;
+  color: rgb(255, 255, 255);
   padding: 1%;
   border-radius: 5px;
 }
